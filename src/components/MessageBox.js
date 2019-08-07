@@ -104,7 +104,7 @@ class MessageBox extends Component {
   fetchWeather() {
     let dbCon = this.props.db.database().ref('/messages');
     const city = 'eskisehir,turkey';
-    const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=8dc90c22640fc62cc57f5a5c1e880105`;
+    const apiCall = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=`;
     return fetch(apiCall, {
       method: 'GET',
       headers: {
@@ -132,7 +132,7 @@ class MessageBox extends Component {
     let dbCon = this.props.db.database().ref('/messages');
     const page = Math.floor(Math.random() * 10) + 1;
     const movieRow = Math.floor(Math.random() * 20);
-    const apiCall = `https://api.themoviedb.org/3/discover/movie?api_key=1cb7a3590fe5fa7325422676a047cc41&language=en&page=${page}&vote_average.gte=6.9`;
+    const apiCall = `https://api.themoviedb.org/3/discover/movie?api_key=&language=en&page=${page}&vote_average.gte=6.9`;
     return fetch(apiCall, {
       method: 'GET',
       headers: {

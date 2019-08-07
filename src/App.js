@@ -8,13 +8,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     var config = {
-      apiKey: 'AIzaSyCT4Oy7W0hpEKvfJSAmbGA2GxxEAI3k-kQ',
-      authDomain: 'distributed-cah.firebaseapp.com',
-      databaseURL: 'https://distributed-cah.firebaseio.com',
+      apiKey: 'api',
+      authDomain: 'domain.firebaseapp.com',
+      databaseURL: 'https://domain.firebaseio.com',
       projectId: 'distributed-cah',
       storageBucket: '',
-      messagingSenderId: '212642959044',
-      appId: '1:212642959044:web:7ada863b9f14888a'
+      messagingSenderId: 'senderid',
+      appId: 'appid'
     };
     firebase.initializeApp(config);
   }
